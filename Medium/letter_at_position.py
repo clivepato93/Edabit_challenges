@@ -1,0 +1,38 @@
+# https://edabit.com/challenge/X8SvemhZykdgKj5uD
+def letter_at_position(n):
+    if int(n)!=float(n) or n==0:
+        return "invalid"
+    return chr(96+int(n))
+
+
+print(letter_at_position(1), "a")
+print(letter_at_position(2), "b")
+print(letter_at_position(3), "c")
+print(letter_at_position(4), "d")
+print(letter_at_position(5), "e")
+print(letter_at_position(6), "f")
+print(letter_at_position(7), "g")
+print(letter_at_position(8), "h")
+print(letter_at_position(9), "i")
+print(letter_at_position(10), "j")
+print(letter_at_position(11), "k")
+print(letter_at_position(12), "l")
+print(letter_at_position(13), "m")
+print(letter_at_position(14), "n")
+print(letter_at_position(15), "o")
+print(letter_at_position(16), "p")
+print(letter_at_position(17), "q")
+print(letter_at_position(18), "r")
+print(letter_at_position(19), "s")
+print(letter_at_position(20), "t")
+print(letter_at_position(21), "u")
+print(letter_at_position(22), "v")
+print(letter_at_position(23), "w")
+print(letter_at_position(24), "x")
+print(letter_at_position(25), "y")
+print(letter_at_position(26), "z")
+print(letter_at_position(0), "invalid")
+print(letter_at_position(4.5), "invalid")
+print(letter_at_position(4.0), "d")
+print(letter_at_position(1.0), "a")
+print(letter_at_position(26.0), "z")

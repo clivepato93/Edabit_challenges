@@ -1,0 +1,13 @@
+# https://edabit.com/challenge/WPojigJER35bJT6YH
+def reversed_binary_integer(num):
+    return int(bin(num)[2:][::-1],2)
+print(reversed_binary_integer(1), 1)
+print(reversed_binary_integer(4), 1)
+print(reversed_binary_integer(5), 5)
+print(reversed_binary_integer(31), 31)
+print(reversed_binary_integer(82), 37)
+print(reversed_binary_integer(90), 45)
+print(reversed_binary_integer(255), 255)
+print(reversed_binary_integer(446), 251)
+print(reversed_binary_integer(451), 391)
+print(reversed_binary_integer(634), 377)

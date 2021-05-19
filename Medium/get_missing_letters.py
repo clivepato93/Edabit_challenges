@@ -1,0 +1,27 @@
+# https://edabit.com/challenge/bGRYmEZvzWFK2sbek
+
+def get_missing_letters(s):
+    return "".join(chr(i) for i in range(ord("a"),ord("z")+1) if chr(i) not in s)
+
+print(get_missing_letters("abcdefgpqrstuvwxyz"), "hijklmno")
+print(get_missing_letters("zyxwvutsrq"), "abcdefghijklmnop")
+print(get_missing_letters(""), "abcdefghijklmnopqrstuvwxyz")
+print(get_missing_letters("abcdefghijklmnopqrstuvwxyz"), "")
+print(get_missing_letters("qinjwm"), "abcdefghkloprstuvxyz")
+print(get_missing_letters("luiqtkgwzheapr"), "bcdfjmnosvxy")
+print(get_missing_letters("qankj"), "bcdefghilmoprstuvwxyz")
+print(get_missing_letters("bawgeuskmfcrpodnxztviy"), "hjlq")
+print(get_missing_letters("gdpna"), "bcefhijklmoqrstuvwxyz")
+print(get_missing_letters("hbi"), "acdefgjklmnopqrstuvwxyz")
+print(get_missing_letters("djxifockvwhaqbnmstzpylu"), "egr")
+print(get_missing_letters("gastzwjcnvoprfmxd"), "behiklquy")
+print(get_missing_letters("xuti"), "abcdefghjklmnopqrsvwyz")
+print(get_missing_letters("abc"), "defghijklmnopqrstuvwxyz")
+print(get_missing_letters("kchiatvmbqrdsyopwju"), "efglnxz")
+print(get_missing_letters("xbkj"), "acdefghilmnopqrstuvwyz")
+print(get_missing_letters("cbvkyroes"), "adfghijlmnpqtuwxz")
+print(get_missing_letters("s"), "abcdefghijklmnopqrtuvwxyz")
+print(get_missing_letters("idvgzujmswloefcthb"), "aknpqrxy")
+print(get_missing_letters("fmoraygevhkxzutcjd"), "bilnpqsw")
+print(get_missing_letters("vuynqpaf"), "bcdeghijklmorstwxz")
+print(get_missing_letters("j"), "abcdefghiklmnopqrstuvwxyz")

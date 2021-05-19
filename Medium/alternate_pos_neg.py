@@ -1,0 +1,35 @@
+
+# https://edabit.com/challenge/HaxQfQTEpo7BFE5rz
+def alternate_pos_neg(lst):
+    if 0 in lst:
+        return False
+    return all(a<0 and b>0 or a>0 and b<0 for a,b in list(zip(lst,lst[1:])))
+
+print(alternate_pos_neg([3, -2, 5, -5, 2, -8]), True)
+print(alternate_pos_neg([-6, 1, -1, 4, -3]), True)
+print(alternate_pos_neg([4, 4, -2, 3, -6, 10]), False)
+print(alternate_pos_neg([34, 49, 33, 17, -47]), False)
+print(alternate_pos_neg([22]), True)
+print(alternate_pos_neg([3, -2, 5, -5, 2, -8]), True)
+print(alternate_pos_neg([-6, 1, -1, 4, -3]), True)
+print(alternate_pos_neg([4, 4, -2, 3, -6, 10]), False)
+print(alternate_pos_neg([34, 49, 33, 17, -47]), False)
+print(alternate_pos_neg([22]), True)
+print(alternate_pos_neg([41, 11, 37, -30, -29, 39, -45, 15, -41, 7]), False)
+print(alternate_pos_neg([3, -7, 15, 18]), False)
+print(alternate_pos_neg([40]), True)
+print(alternate_pos_neg([40, 27, -44, -13, -31]), False)
+print(alternate_pos_neg([40, 50, -7, 45, -7]), False)
+print(alternate_pos_neg([-23, -16, -9, -15, 16]), False)
+print(alternate_pos_neg([0, 0, 0, 0]), False)
+print(alternate_pos_neg([50, 28, -5, 25, -14, -2, 20, 26, -32]), False)
+print(alternate_pos_neg([24, -10]), True)
+print(alternate_pos_neg([-2, 4, 16, -15, 24, 2]), False)
+print(alternate_pos_neg([19, -12, -37, 44, -43, 44, 47]), False)
+print(alternate_pos_neg([-21, 42, -11, 27, -16, 36, 37]), False)
+print(alternate_pos_neg([30]), True)
+print(alternate_pos_neg([3, -7, 15, -18]), True)
+print(alternate_pos_neg([9, -4, 8, -16]), True)
+print(alternate_pos_neg([3, -7, 15, -18, 0]), False)
+print(alternate_pos_neg([0]), False)
+print(alternate_pos_neg([0, 2, -5, 8, -12]), False)
