@@ -1,4 +1,4 @@
-# no yet completed
+# no yet completed ..
 # https://edabit.com/challenge/Cp3JRpooAqfA4kGkv
 # def node_type(_N, _P, n):
 #     if n not in _N:
