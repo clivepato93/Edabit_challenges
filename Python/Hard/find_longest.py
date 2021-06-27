@@ -1,9 +1,9 @@
 # https://edabit.com/challenge/Z6kRGLpYgSuFQJ7Rx
 
-
+import re
 def find_longest(sentence):
-    sentence=''.join([i for i in sentence.lower() if i.isalpha() or i==' '])
-    return sentence
+    return max(re.split(r'\W',sentence),key=len).lower()
+
 
 
 
