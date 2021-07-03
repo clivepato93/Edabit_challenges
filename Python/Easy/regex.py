@@ -51,30 +51,64 @@
 
 # https://edabit.com/challenge/ffeLkHfoGDbApgNSA
 
+# import re
+#
+# pattern = "x[A-F|0-9]{2}"
+#
+#
+# txt1 = 'Exception 0xAF'
+# txt2 = 'Exception 0x1A'
+# txt3 = 'Exception 0x22'
+# txt4 = 'Exception 0xF9'
+# txt5 = 'Exception 0x9H'
+# txt6 = 'Exception 0xf9'
+# txt7 = 'Exception 0xB'
+# txt8 = 'Exception 0xBA6C3'
+#
+# print('[' in pattern and ']' in pattern, True, 'You must use a character set your expression.')
+#
+# print(re.findall(pattern, txt1), ['xAF'])
+# print(re.findall(pattern, txt2), ['x1A'])
+# print(re.findall(pattern, txt3), ['x22'])
+# print(re.findall(pattern, txt4), ['xF9'])
+# print(re.findall(pattern, txt5), [], 'Letters should be between A and F')
+# print(re.findall(pattern, txt6), [], 'Letters must be upper case')
+# print(re.findall(pattern, txt7), [], 'There should be at least two hexadecimal digits')
+# print(re.findall(pattern, txt8), ['xBA'], 'There should be no more than two hexadecimal digits')
+
+
+#https://edabit.com/challenge/e9nBwAjkdMX9LQd4f
+
+# import re
+#
+# pattern = "[\.\.\.]{3,}"
+#
+# txt = 'Hello!... Wait. How goes?..... GoodBye!..'
+#
+# print(bool(re.search('\{.*\}', pattern)), True, 'You must use at least one of the fixed quantifiers in your expression')
+# print(re.findall(pattern, txt), ['...', '.....'])
+
+# https://edabit.com/challenge/5zDR5LyznNPsnEuYJ
 import re
 
-pattern = "x[A-F|0-9]{2}"
+pattern = "[^a-z\d ]"
 
 
-txt1 = 'Exception 0xAF'
-txt2 = 'Exception 0x1A'
-txt3 = 'Exception 0x22'
-txt4 = 'Exception 0xF9'
-txt5 = 'Exception 0x9H'
-txt6 = 'Exception 0xf9'
-txt7 = 'Exception 0xB'
-txt8 = 'Exception 0xBA6C3'
+txt = ' alice15@gmail.com '
 
-print('[' in pattern and ']' in pattern, True, 'You must use a character set your expression.')
+print('[^' in pattern, True, 'You must use a negated character set in your expression.')
+print(re.findall(pattern, txt), ['@', '.'])
 
-print(re.findall(pattern, txt1), ['xAF'])
-print(re.findall(pattern, txt2), ['x1A'])
-print(re.findall(pattern, txt3), ['x22'])
-print(re.findall(pattern, txt4), ['xF9'])
-print(re.findall(pattern, txt5), [], 'Letters should be between A and F')
-print(re.findall(pattern, txt6), [], 'Letters must be upper case')
-print(re.findall(pattern, txt7), [], 'There should be at least two hexadecimal digits')
-print(re.findall(pattern, txt8), ['xBA'], 'There should be no more than two hexadecimal digits')
+# https://edabit.com/challenge/u9rnDxsJRDdvRmFai
 
+import re
 
-# Note from the original:
+pattern = "best\sb[a-z]{1,}"
+
+txt = 'best buy best car best friend best-boy bestguest best dressed best bet best man best deal best boyfriend'
+
+print('\s' in pattern, True, 'You must use whitespace character class.')
+print(re.findall(pattern, txt), ['best buy', 'best bet', 'best boyfriend'])
+
+# Translated from JavaScript.
+# The RegEx series was originally posted by Isaac Pak.
