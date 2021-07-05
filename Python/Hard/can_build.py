@@ -1,11 +1,8 @@
 
 # https://edabit.com/challenge/CD2fqbytBuXrbqJkL
 def can_build(txt1, txt2):
-    txt1=txt1.replace(" ","")
-    txt2=txt2.replace(" ","")
-    return all(i in txt2 for i in list(set(txt1)))
-
-
+    lst= [l for r in [list(i*txt2.count(i)) for i in set(txt2) if i!=" "] for l in r]
+    return all(txt2.count(l)>=txt1.count(l) for l in txt1.replace(' ',''))
 
 print(can_build("got 2 go", "go go go 2 today"), True)
 print(can_build("for an angel", "angel forest nymph awaken"), True)
