@@ -2,13 +2,6 @@
 # command to run in terminal
 # python3 -m doctest -v adjacent_product.py
 
-'''
->>> adjacent_product(['e','i'])
-Traceback (most recent call last):
-        ...
-TypeError: can't multiply sequence by non-int of type 'str'
-'''
-
 
 def adjacent_product(lst):
     """ returns the highest product in a list
