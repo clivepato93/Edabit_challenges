@@ -112,3 +112,21 @@ print(re.findall(pattern, txt), ['best buy', 'best bet', 'best boyfriend'])
 
 # Translated from JavaScript.
 # The RegEx series was originally posted by Isaac Pak.
+
+# https://edabit.com/challenge/n4yvHn6ybn45bBwXj
+
+import re
+x = "\d*[02468]{1}$" # write the regular expression
+
+
+import re
+from random import randint
+
+regex = re.compile(x)
+
+print(regex.match("2341") != None, False, "2341 is odd.")
+print(regex.match("132") != None, True, "132 is even.")
+print(regex.match("6") != None, True, "6 is even.")
+print(regex.match("29") != None, False, "29 is odd.")
+print(regex.match("5578") != None, True, "5578 is even.")
+print(regex.match("3") != None, False, "3 is odd.")
