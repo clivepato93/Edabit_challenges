@@ -130,3 +130,15 @@ print(regex.match("6") != None, True, "6 is even.")
 print(regex.match("29") != None, False, "29 is odd.")
 print(regex.match("5578") != None, True, "5578 is even.")
 print(regex.match("3") != None, False, "3 is odd.")
+
+
+# https://edabit.com/challenge/RvZfGXR3TQHjLy7mN
+
+import re
+
+pattern = "\d{1,}\s\w+\s\w{1,}\."
+
+txt = '123 Redding Dr. 1560 Knoxville Ave. 3030 Norwalk Dr. 5 South St.'
+
+print('\d' in pattern, True, 'You must use digit character class.') 
+print(re.findall(pattern, txt),  ['123 Redding Dr.', '1560 Knoxville Ave.', '3030 Norwalk Dr.', '5 South St.'])
