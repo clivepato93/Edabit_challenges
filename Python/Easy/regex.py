@@ -140,5 +140,16 @@ pattern = "\d{1,}\s\w+\s\w{1,}\."
 
 txt = '123 Redding Dr. 1560 Knoxville Ave. 3030 Norwalk Dr. 5 South St.'
 
-print('\d' in pattern, True, 'You must use digit character class.') 
+print('\d' in pattern, True, 'You must use digit character class.')
 print(re.findall(pattern, txt),  ['123 Redding Dr.', '1560 Knoxville Ave.', '3030 Norwalk Dr.', '5 South St.'])
+
+# https://edabit.com/challenge/uCGpBF99YYJNv6q7L
+
+import re
+
+pattern = "[^\s,].[^\s,]"
+
+txt = 'eta, edu, etc, ele, epa, eye, exe, emf, ete, eon, era'
+
+print('.' in pattern, True, 'You must use the dot in your expression.')
+print(re.findall(pattern, txt),  ['eta', 'edu', 'etc', 'ele', 'epa', 'eye', 'exe', 'emf', 'ete', 'eon', 'era'])
