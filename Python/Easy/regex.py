@@ -1,5 +1,5 @@
 # https://edabit.com/challenge/fA99WMH2xBndowm5a
-# import re
+import re
 #
 # pattern = '\w+'
 #
@@ -9,7 +9,6 @@
 # print(' '.join(re.findall(pattern, txt)), 'Regular Expressions')
 #
 #
-# import re
 #
 # x = '^\d{5}$'
 #
@@ -32,7 +31,6 @@
 
 
 # https://edabit.com/challenge/p8tqXx7eiRk78g8zS
-# import re
 #
 # pattern = "^[-+]*\d{0,}\\.{1}\d{1,}$"
 #
@@ -51,7 +49,6 @@
 
 # https://edabit.com/challenge/ffeLkHfoGDbApgNSA
 
-# import re
 #
 # pattern = "x[A-F|0-9]{2}"
 #
@@ -79,7 +76,6 @@
 
 #https://edabit.com/challenge/e9nBwAjkdMX9LQd4f
 
-# import re
 #
 # pattern = "[\.\.\.]{3,}"
 #
@@ -89,67 +85,88 @@
 # print(re.findall(pattern, txt), ['...', '.....'])
 
 # https://edabit.com/challenge/5zDR5LyznNPsnEuYJ
-import re
 
-pattern = "[^a-z\d ]"
-
-
-txt = ' alice15@gmail.com '
-
-print('[^' in pattern, True, 'You must use a negated character set in your expression.')
-print(re.findall(pattern, txt), ['@', '.'])
+# pattern = "[^a-z\d ]"
+#
+#
+# txt = ' alice15@gmail.com '
+#
+# print('[^' in pattern, True, 'You must use a negated character set in your expression.')
+# print(re.findall(pattern, txt), ['@', '.'])
 
 # https://edabit.com/challenge/u9rnDxsJRDdvRmFai
 
-import re
 
-pattern = "best\sb[a-z]{1,}"
-
-txt = 'best buy best car best friend best-boy bestguest best dressed best bet best man best deal best boyfriend'
-
-print('\s' in pattern, True, 'You must use whitespace character class.')
-print(re.findall(pattern, txt), ['best buy', 'best bet', 'best boyfriend'])
+# pattern = "best\sb[a-z]{1,}"
+#
+# txt = 'best buy best car best friend best-boy bestguest best dressed best bet best man best deal best boyfriend'
+#
+# print('\s' in pattern, True, 'You must use whitespace character class.')
+# print(re.findall(pattern, txt), ['best buy', 'best bet', 'best boyfriend'])
 
 # Translated from JavaScript.
 # The RegEx series was originally posted by Isaac Pak.
 
 # https://edabit.com/challenge/n4yvHn6ybn45bBwXj
 
-import re
-x = "\d*[02468]{1}$" # write the regular expression
-
-
-import re
-from random import randint
-
-regex = re.compile(x)
-
-print(regex.match("2341") != None, False, "2341 is odd.")
-print(regex.match("132") != None, True, "132 is even.")
-print(regex.match("6") != None, True, "6 is even.")
-print(regex.match("29") != None, False, "29 is odd.")
-print(regex.match("5578") != None, True, "5578 is even.")
-print(regex.match("3") != None, False, "3 is odd.")
+# x = "\d*[02468]{1}$" # write the regular expression
+#
+#
+# from random import randint
+#
+# regex = re.compile(x)
+#
+# print(regex.match("2341") != None, False, "2341 is odd.")
+# print(regex.match("132") != None, True, "132 is even.")
+# print(regex.match("6") != None, True, "6 is even.")
+# print(regex.match("29") != None, False, "29 is odd.")
+# print(regex.match("5578") != None, True, "5578 is even.")
+# print(regex.match("3") != None, False, "3 is odd.")
 
 
 # https://edabit.com/challenge/RvZfGXR3TQHjLy7mN
 
-import re
 
-pattern = "\d{1,}\s\w+\s\w{1,}\."
-
-txt = '123 Redding Dr. 1560 Knoxville Ave. 3030 Norwalk Dr. 5 South St.'
-
-print('\d' in pattern, True, 'You must use digit character class.')
-print(re.findall(pattern, txt),  ['123 Redding Dr.', '1560 Knoxville Ave.', '3030 Norwalk Dr.', '5 South St.'])
+# pattern = "\d{1,}\s\w+\s\w{1,}\."
+#
+# txt = '123 Redding Dr. 1560 Knoxville Ave. 3030 Norwalk Dr. 5 South St.'
+#
+# print('\d' in pattern, True, 'You must use digit character class.')
+# print(re.findall(pattern, txt),  ['123 Redding Dr.', '1560 Knoxville Ave.', '3030 Norwalk Dr.', '5 South St.'])
 
 # https://edabit.com/challenge/uCGpBF99YYJNv6q7L
 
-import re
 
-pattern = "[^\s,].[^\s,]"
+# pattern = "[^\s,].[^\s,]"
+#
+# txt = 'eta, edu, etc, ele, epa, eye, exe, emf, ete, eon, era'
+#
+# print('.' in pattern, True, 'You must use the dot in your expression.')
+# print(re.findall(pattern, txt),  ['eta', 'edu', 'etc', 'ele', 'epa', 'eye', 'exe', 'emf', 'ete', 'eon', 'era'])
 
-txt = 'eta, edu, etc, ele, epa, eye, exe, emf, ete, eon, era'
+# https://edabit.com/challenge/8rXfBzRZbgZP7mzyR
 
-print('.' in pattern, True, 'You must use the dot in your expression.')
-print(re.findall(pattern, txt),  ['eta', 'edu', 'etc', 'ele', 'epa', 'eye', 'exe', 'emf', 'ete', 'eon', 'era'])
+# def is_last_character_n(word):
+#     check_n=re.compile(r'n$')
+#     match=check_n.search(word)
+#     if match:
+#         return True
+#     return False
+#
+#
+# print(is_last_character_n("Aiden"), True)
+# print(is_last_character_n("Roxy"), False)
+# print(is_last_character_n("Bert"), False)
+# print(is_last_character_n("Dean"), True)
+# print(is_last_character_n("Ian"), True)
+# print(is_last_character_n("Brian"), True)
+# print(is_last_character_n("Daniel"), Fa
+
+
+# https://edabit.com/challenge/SgKy45GqofsiDDeNs
+# pattern = "<{1}.+?>{1}"
+#
+# txt = '... <!-- My -- comment test --> ..  <!----> .. '
+#
+# print(any(i in pattern for i in ['+?', '*?', '}?']), True, 'You must use at least one lazy quantifier in your expression')
+# print(re.findall(pattern, txt), ['<!-- My -- comment test -->', '<!---->'])
