@@ -13,3 +13,4 @@ print(add_bill("p400,d200,p40,p60"), 200)
 print(add_bill("d20k,d100,p40"), 20100)
 print(add_bill("p20k,p100,d100"), 100)
 print(add_bill("d100k"), 100000)
+
