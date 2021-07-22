@@ -6,7 +6,7 @@ def lucky_seven(lst):
             for k in range(j+1, len(lst)):
                 f.append([lst[i],lst[j],lst[k]])
 
-    return any(sum(c)==7 for c in f)
+    return any(sum(c)==7 and len(set(c))==3 for c in f)
 
 
 print(lucky_seven([2, 4, 3, 8, 9, 1]), True)

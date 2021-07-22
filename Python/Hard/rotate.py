@@ -5,7 +5,7 @@ def rotate(mat):
     mat=mat[::-1]
     a=len(mat[0])
     for i in range(a):
-        for v in  range(len(mat)):
+        for v in range(len(mat)):
             f.append(mat[v][i])
     return [f[i:i+a] for i in range(0,a*a,a)]
 
