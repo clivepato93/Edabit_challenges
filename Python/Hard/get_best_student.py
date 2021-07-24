@@ -1,7 +1,7 @@
 # https://edabit.com/challenge/pnd7xPYuvogkNfHg6
 
 def get_best_student(grades):
-    return max(grades,key=lambda i:sum(grades[i])/len(grades[i]))
+    return max(grades,key=lambda i:sum(grades[i])/len(grades))
 print(get_best_student({
 	"John": [100, 90, 80],
 	"Bob": [100, 70, 80]
