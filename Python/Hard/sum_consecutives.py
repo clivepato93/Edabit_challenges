@@ -1,11 +1,11 @@
 # https://edabit.com/challenge/ZFLmA6Xjt8gNxg4KR
-
+# not complete
 def sum_consecutives(lst):
     lst1=[]
     s=0
     x=s+1
     while lst:
-        
+
         while lst[s]==lst[x]:
             x+=1
         lst1.append(sum(lst[s:x]))

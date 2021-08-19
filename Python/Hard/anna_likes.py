@@ -1,5 +1,5 @@
 # https://edabit.com/challenge/KdcCd2Xi96bMa4F8A
-
+# not complete
 def anna_likes(boy):
     boy=boy.lower()
     vowels = 'aeiou'
