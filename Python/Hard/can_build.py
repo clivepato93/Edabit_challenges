@@ -27,3 +27,16 @@ print(can_build1("long high add or", "highway road go long"), False)
 print(can_build1("fill tuck mid", "truck falls dim"), False)
 print(can_build1("skin man i", "man in mask"), False)
 print(can_build1("foolish prides", "foolish pride"), False)
+
+# https://edabit.com/challenge/EHzL3v25wYp7E4AFC
+
+def can_build(s1, s2):
+    for l in set(s2):
+        if s2.count(l)>s1.count(l):
+            return False
+    return True
+
+
+print(can_build("aPPleAL", "PAL"), True)
+print(can_build("OAT", "OAT"), True)
+print(can_build("aPPleAL", "apple"), False)
