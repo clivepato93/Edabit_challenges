@@ -3,7 +3,7 @@
 
 function societyName(friends) {
     friends.sort()
-	console.log(friends.reduce((abb,word)=> abb+word[0],''))
+	return  friends.reduce((abb,word)=> abb+word[0],'')
 }
 
 
