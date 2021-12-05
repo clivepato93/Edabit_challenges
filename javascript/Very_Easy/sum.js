@@ -16,3 +16,20 @@ console.log(sum(10), 55)
 console.log(sum(12), 78)
 
 */
+
+
+// https://edabit.com/challenge/reR3jdfJnREauJj8d
+
+function sum(arr) {
+    if(arr.length==0) return 0
+    else{
+        const x  = sum(arr.slice(1))
+        return arr[0]+x
+    }
+}
+
+
+console.log(sum([1, 2, 3, 4]), 10);
+console.log(sum([-1, -1, -1]), -3);
+console.log(sum([1]), 1);
+console.log(sum([]), 0);
