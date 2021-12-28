@@ -8,10 +8,9 @@ const Person = function(first,Last) {
       return `${firstAndLast}`;
     };
 
-    set setFirstName(first){
-        return  `${first} ${name[name.length-1]}`
-
-    }
+    this.setFullName = function(input) {
+        // Insert your code here
+      };
   
     this.getFirstName = function() {
       return `${name[0]}`;
