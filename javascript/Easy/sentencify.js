@@ -24,4 +24,4 @@ console.log(
       sentencify(["i'm","afraid","I","can't","let","you","do","that"])
     , "I'm afraid I can't let you do that.");
 
-    console.log(2%0)
+    console.log()
