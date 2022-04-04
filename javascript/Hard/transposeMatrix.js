@@ -26,3 +26,22 @@ console.log(transposeMatrix([
 	["one", "what", "have", "for"], 
 	["can", "Matrix", "to", "yourself."]
 ]), "Unfortunately, no one can be told what Matrix is. You'll have to see it for yourself.")
+
+// https://www.codewars.com/kata/52fba2a9adcd10b34300094c/train/javascript
+
+function transpose(mtx) {
+    const width = mtx[0].length;
+  const height = mtx.length;
+const final = [];
+  for (let i = 0; i < width; i++) {
+    const row = [];
+      for (let j = 0; j < height; j++) {
+          row.push(mtx[j][i]); 
+      }   
+    final.push(row);
+  }
+  return final
+}
+
+console.log(transpose([[1]]), [[1]]);
+console.log(transpose([[1,2,3],[4,5,6]]), [[1,4],[2,5],[3,6]]);
