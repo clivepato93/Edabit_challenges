@@ -1,5 +1,5 @@
 // https://www.codewars.com/kata/58279e13c983ca4a2a00002a/train/javascript
-
+/*
 function greetDevelopers(list) {
     // thank you for checking out my kata :)
 
@@ -24,11 +24,13 @@ function greetDevelopers(list) {
     } 
   ];
   
-  
   console.log(greetDevelopers(list1), answer);
+  
+*/
 
 // https://www.codewars.com/kata/582dace555a1f4d859000058/train/javascript
 
+/*
 function findAdmin(list, lang) {
     // thank you for checking out the Coding Meetup kata :)
     return list.filter(entry => entry.language == lang && entry.githubAdmin == 'yes')
@@ -50,9 +52,11 @@ function findAdmin(list, lang) {
 console.log(findAdmin(list1, 'JavaScript'), answer1);
 console.log(findAdmin(list1, 'Ruby'), []);
 console.log(findAdmin(list1, 'Python'), []);
+*/
 
 // https://www.codewars.com/kata/58287977ef8d4451f90001a0/train/javascript
 
+/*
 function isSameLanguage(list) {
     // thank you for checking out the Coding Meetup kata :)
     return list.every(entry => entry.language == list[0].language)
@@ -72,6 +76,69 @@ function isSameLanguage(list) {
   
   console.log(isSameLanguage(list1), true);
   console.log(isSameLanguage(list2), false);
+*/
+
+// https://www.codewars.com/kata/582746fa14b3892727000c4f/train/javascript
+
+/*
+function countDevelopers(list) {
+    let x = 0
+    list.forEach(e => {
+       if( e.continent == 'Europe' && e.language == 'JavaScript'){
+           x++;
+       }
+    });
+    return x
+  }
+
+  const list1 = [
+    { firstName: 'Noah', lastName: 'M.', country: 'Switzerland', continent: 'Europe', age: 19, language: 'JavaScript' },
+    { firstName: 'Maia', lastName: 'S.', country: 'Tahiti', continent: 'Oceania', age: 28, language: 'JavaScript' },
+    { firstName: 'Shufen', lastName: 'L.', country: 'Taiwan', continent: 'Asia', age: 35, language: 'HTML' },
+    { firstName: 'Sumayah', lastName: 'M.', country: 'Tajikistan', continent: 'Asia', age: 30, language: 'CSS' }
+  ];
 
 
+    console.log(countDevelopers(list1), 1, "Noah is the only JavaScript developer from Europe");
   
+  const list2 = [
+    { firstName: 'Oliver', lastName: 'Q.', country: 'Australia', continent: 'Oceania', age: 19, language: 'HTML' },
+    { firstName: 'Lukas', lastName: 'R.', country: 'Austria', continent: 'Europe', age: 89, language: 'HTML' }
+  ];
+  
+  console.log(countDevelopers(list2), 0, "Lukas is not a JS devolper");
+*/
+
+// https://www.codewars.com/kata/583a8bde28019d615a000035/train/javascript
+
+/*
+function findOddNames(list) {
+    // thank you for checking out the Coding Meetup kata :)
+    return list.filter(entry=>{
+        const name = [...entry.firstName].reduce((t,c)=>t+ c.charCodeAt(0),0)
+        if(name%2==1){
+            return entry
+        }
+    })
+  }
+
+  var list1 = [
+    { firstName: 'Aba', lastName: 'N.', country: 'Ghana', continent: 'Africa', age: 21, language: 'Python' },
+    { firstName: 'Abb', lastName: 'O.', country: 'Israel', continent: 'Asia', age: 39, language: 'Java' }
+  ];
+  
+  var answer1 = [
+    { firstName: 'Abb', lastName: 'O.', country: 'Israel', continent: 'Asia', age: 39, language: 'Java' }
+  ];
+  
+console.log(findOddNames(list1), answer1);
+  
+  
+  var list2 = [
+    { firstName: 'Aba', lastName: 'N.', country: 'Ghana', continent: 'Africa', age: 21, language: 'Python' },
+  ];
+  
+  var answer2 = [];
+  
+console.log(findOddNames(list2), answer2);
+*/
