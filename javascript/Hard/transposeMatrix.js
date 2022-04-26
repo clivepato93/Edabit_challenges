@@ -1,6 +1,6 @@
 // https://edabit.com/challenge/3mKNTsZ5f7b9hHTky
 
-
+// useful function for when needing to do through an multi row array horizontally
 function transposeMatrix(mtx) {
     const width = mtx[0].length
     const height = mtx.length

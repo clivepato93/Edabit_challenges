@@ -75,22 +75,54 @@ console.log(solve("*","codewars"),true)
 // console.log(solve(["IAMDEFANDJKL","thedefgh","xyzDEFghijabc"]),[6, 5, 7]);
 // console.log(solve(["encode","abc","xyzD","ABmD"]),[1, 3, 1, 3]);
 
-https://www.codewars.com/kata/5635e7cb49adc7b54500001c/train/javascript
+//https://www.codewars.com/kata/5635e7cb49adc7b54500001c/train/javascript
 
-function solve(n) {
+
+/* useful function */
+
+// function solve(n) {
   // Your code here
-  const coins = [500,200,100,50,20,10];
-  const combo = [0,0,0,0,0,0];
-    for (let i = 0; i <coins.length ; i++) {
-        combo[i] = Math.floor(n / coins[i]);
-        n -= combo[i] * coins[i];
+  // const coins = [500,200,100,50,20,10];
+  // const combo = [0,0,0,0,0,0];
+    // for (let i = 0; i <coins.length ; i++) {
+        // combo[i] = Math.floor(n / coins[i]);
+        // n -= combo[i] * coins[i];
         // console.log(coins[i],combo[i],n)
-    }
+    // }
 
-    return n?-1:combo.reduce((t,c)=>t+c,0)
-}
+    // return n?-1:combo.reduce((t,c)=>t+c,0)
+// }
 
-console.log(solve(770), 4, "Wrong result for 770");
+// console.log(solve(770), 4, "Wrong result for 770");
 // console.log(solve(550), 2, "Wrong result for 550");
 // console.log(solve(10), 1, "Wrong result for 10");
 // console.log(solve(1250), 4, "Wrong result for 1250");
+
+
+// https://www.codewars.com/kata/5a29a0898f27f2d9c9000058/train/javascript
+/*
+  might help when you need to recap on regex
+*/
+
+function solve(s){
+  //..
+  return [s.match(/[A-Z]/g||[]).length,s.match(/[a-z]/g||[]).length,s.match(/[0-9]/g||[]).length,s.match(/[^a-z0-9]/gi||[]).length]
+
+  // return [s.match(/[A-Z]/g||[]).length,s.match(/[a-z]/g||[]).length,s.match(/[0-9]/g||[]).length,s.match(/[^a-z0-9]/gi||[]).length]
+ }
+
+//  better solution not mine though
+ const solve = x => {
+  let u = x.match(/[A-Z]/g)||[]
+  let d = x.match(/[a-z]/g)||[]
+  let n = x.match(/[0-9]/g)||[]
+  let s = x.match(/[^A-Z0-9]/gi)||[]
+  return [u.length, d.length, n.length, s.length]
+}
+
+ console.log(solve("Codewars@codewars123.com"),[1,18,3,2]);
+//  console.log(solve("bgA5<1d-tOwUZTS8yQ"),[7,6,3,2]);
+//  console.log(solve("P*K4%>mQUDaG$h=cx2?.Czt7!Zn16p@5H"),[9,9,6,9]);
+//  console.log(solve("RYT'>s&gO-.CM9AKeH?,5317tWGpS<*x2ukXZD"),[15,8,6,9]);
+//  console.log(solve("$Cnl)Sr<7bBW-&qLHI!mY41ODe"), [10,7,3,6])
+//  console.log(solve("@mw>0=QD-iAx!rp9TaG?o&M%l$34L.nbft"), [7,13,4,10]);
