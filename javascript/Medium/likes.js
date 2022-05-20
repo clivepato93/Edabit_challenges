@@ -1,18 +1,18 @@
 // https://www.codewars.com/kata/5266876b8f4bf2da9b000362/train/javascript
 
+
+// not yet completed
 function likes(names) {
     // TODO
-
+    let length = names.length
+    names = names.reverse();
     if(!names.length) return 'no one likes this';
     return names.reduce((final,c,i)=>{
         //  if(names.length==0) return 'no one likes this';
-        if(i==0) final+ `${c}` 
+        if(i>0) return `${c}, `+ final
+        if(!i) return `${c}`+ final
 
-        else if(i==1) return final+ ` and ${c}`
-
-        else if(i==2) return final+
-
-    },'')
+    },' like this')
 
 
   }
