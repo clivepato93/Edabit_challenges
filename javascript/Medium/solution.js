@@ -44,7 +44,6 @@ function solution(number){
                 for (let index = 0; index < multipler; index++) {
                     numeral.push(string)      
                 }
-                
             }
      }
     }
