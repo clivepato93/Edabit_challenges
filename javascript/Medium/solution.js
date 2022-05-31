@@ -49,7 +49,6 @@ function solution(number){
     }
     return numeral.join('')
    }
-   
 
 console.log(solution(1), 'I', '1 should, "I"')
 console.log(solution(2), 'II', '2 should, "II"')
@@ -62,3 +61,26 @@ console.log(solution(11), 'XI')
 console.log(solution(19), 'XIX')
 console.log(solution(22), 'XXII')
 console.log(solution(15), 'XV')
+console.log(solution(1954))
+
+// https://www.codewars.com/kata/51b6249c4612257ac0000005/train/javascript
+  //  function solution (roman) {
+  //   const  x = 
+  //   {'M':1000,'CM':900,
+  //    'D':500,'CD':400,
+  //    'C':100,'XC':90,
+  //    'L':50,'XL':40,
+  //    'X':10,'IX':9,
+  //    'V':5,'IV':4,
+  //    'I':1 }
+
+
+  //   return roman.match(/M|CM|D|CD|C|XC|L|XL|X|IX|V|IV|I/g).reduce((t,c)=> t+ x[c],0)
+
+  // }
+   
+  // console.log( solution('XXI'), 21);
+//   console.log( solution('I'), 1);
+  // console.log( solution('IV'), 4);
+//   console.log( solution('MMVIII'), 2008);
+//   console.log( solution('MDCLXVI'), 1666);
