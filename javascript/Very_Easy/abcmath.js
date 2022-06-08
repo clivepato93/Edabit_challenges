@@ -10,8 +10,8 @@ function abcmath(a, b, c) {
 
 
 // console.log(abcmath(1, 2, 3), false)
-// console.log(abcmath(69, 15, 9), false)
-console.log(abcmath(9, 2, 52), false)
+// // console.log(abcmath(69, 15, 9), false)
+// console.log(abcmath(9, 2, 52), false)
 // console.log(abcmath(5, 2, 3), false)
 // console.log(abcmath(5, 2, 1), true)
 // console.log(abcmath(261, 2, 1), true)
