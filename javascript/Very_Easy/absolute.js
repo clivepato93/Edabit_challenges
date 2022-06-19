@@ -4,4 +4,4 @@
 
 */
 
-const absolute = (n) => n<0 ? n*-1: n*1;
+const absolute = (n) => (n < 0 ? n * -1 : n * 1);
