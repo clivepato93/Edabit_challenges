@@ -22,3 +22,5 @@ console.log(accum("HbideVbxncC"), "H-Bb-Iii-Dddd-Eeeee-Vvvvvv-Bbbbbbb-Xxxxxxxx-N
 //third and final test
 
 //blah
+
+// got to love git config issues 
