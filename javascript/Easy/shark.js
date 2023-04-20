@@ -1,24 +1,19 @@
-function shark(pontoonDistance, sharkDistance, youSpeed, sharkSpeed, dolphin){
-  if(dolphin){
-    sharkSpeed/=2
+function shark(pontoonDistance, sharkDistance, youSpeed, sharkSpeed, dolphin) {
+  if (dolphin) {
+    sharkSpeed /= 2;
   }
 
-
-
-  while(pontoonDistance>0||sharkDistance>pontoonDistance){
-    
-    pontoonDistance-=youSpeed;
-    sharkDistance-=sharkSpeed
-    if(pontoonDistance<=0){
-      return 'Alive!'
+  while (pontoonDistance > 0 || sharkDistance > pontoonDistance) {
+    pontoonDistance -= youSpeed;
+    sharkDistance -= sharkSpeed;
+    if (pontoonDistance <= 0) {
+      return "Alive!";
     }
-    if(sharkDistance<=0){
-      return 'Shark Bait!'
+    if (sharkDistance <= 0) {
+      return "Shark Bait!";
     }
-
   }
 }
-
 
 console.log(shark(12, 50, 4, 8, true), "Alive!");
 
