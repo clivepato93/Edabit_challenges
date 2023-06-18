@@ -1,11 +1,5 @@
 // https://www.codewars.com/kata/578a8a01e9fd1549e50001f1/train/javascrpt
-//   console.log((today.getMonth() - last.getMonth()) * 30);
-//   console.log(
-//     last.getDate() >= today.getDate()
-//       ? last.getDate() - today.getDate()
-//       : today.getDate() - last.getDate()
-//   );
-//   console.log(last.getDate(), today.getDate() - last.getDate());
+
 function periodIsLate(last, today, cycleLength) {
   return (
     Math.floor((today.getTime() - last.getTime()) / (86400 * 1000)) >
