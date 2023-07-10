@@ -13,13 +13,18 @@ function printArray(number) {
 }
 */
 
-
 function printArray(number) {
-    let newArray = [];
-  
-    for(i = 1; i <= number;i++) {
-      newArray.push(i);
-    }
-  
-    return newArray;
+  let newArray = [];
+
+  for (i = 1; i <= number; i++) {
+    newArray.push(i);
   }
+
+  return newArray;
+}
+
+//www.codewars.com/kata/56e2f59fb2ed128081001328/train/javascript
+function printArray(array) {
+  //show me the code!
+  return array.join(",");
+}

@@ -13,9 +13,22 @@
 */
 
 function addBinary(a, b) {
-	return (a+b).toString(2)
+  return (a + b).toString(2);
 }
 
-console.log(addBinary(1,1), '10')
-console.log(addBinary(1,2), '11')
-console.log(addBinary(4,5),'1001')
+console.log(addBinary(1, 1), "10");
+console.log(addBinary(1, 2), "11");
+console.log(addBinary(4, 5), "1001");
+
+//https://www.codewars.com/kata/57f6ecdfcca6e045d2001207/train/javascript
+function add(a, b) {
+  // code here
+  return "" + a == b;
+}
+
+console.log(add("1", 1), true);
+console.log(add(1, "1"), true);
+console.log(add(1, "0"), false);
+console.log(add("11", 11), true);
+console.log(add(12, 12), true);
+console.log(add(120, "021"), false);

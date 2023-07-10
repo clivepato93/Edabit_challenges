@@ -40,3 +40,21 @@ console.log(animals(-45, 5), "No solutions");
 console.log(animals(500, 0), "No solutions");
 console.log(animals(0, 500), "No solutions");
 console.log(animals(5, -55), "No solutions");
+
+// https://www.codewars.com/kata/571f1eb77e8954a812000837/train/javascript
+function animal(obj) {
+  return `This ${obj.color} ${obj.name} has ${obj.legs} legs.`;
+}
+
+console.log(
+  animal({ name: "dog", legs: 4, color: "white" }),
+  "This white dog has 4 legs."
+);
+console.log(
+  animal({ name: "cock", legs: 2, color: "red" }),
+  "This red cock has 2 legs."
+);
+console.log(
+  animal({ name: "rabbit", legs: 4, color: "gray" }),
+  "This gray rabbit has 4 legs."
+);
