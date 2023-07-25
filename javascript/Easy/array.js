@@ -23,3 +23,17 @@ function popElement(arr) {
   arr.pop();
   return arr;
 }
+
+//www.codewars.com/kata/52195c9bb576caf14200007f/train/javascript
+
+Array.range = function (start, count) {
+  return Array.from({ length: count }, (_, i) => start + i);
+};
+
+Array.prototype.sum = function () {
+  let num = 0;
+  for (let i = 0; i < this.length; i++) {
+    num += this[i];
+  }
+  return num;
+};
