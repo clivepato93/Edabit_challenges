@@ -11,7 +11,7 @@ function LinkedList(head = null) {
 function getNth(node, index) {
   // Your code goes here.
   if (!node) throw new Error("Invalid node at " + index);
-  console.log(node);
+  // console.log(node);
   return index === 0 ? node : getNth(node.next, index - 1);
 }
 
@@ -37,6 +37,19 @@ let c = new Node(3);
 a.next = b;
 b.next = c;
 const list = new LinkedList(a);
-// console.log(list);
+// list.head = a;
+console.log(list);
 // console.log(length(a), 3);
-console.log(count(a, 1), 1);
+// console.log(count(a, 1), 1);
+
+// https://www.codewars.com/kata/581c6b075cfa83852700021f/train/javascript
+function indexOf(head, value, index = 0) {
+  if (!head) {
+    console.log("test");
+    return -1;
+  }
+  if (value === head.data) return index;
+  return indexOf(head.next, value, (index += 1));
+}
+
+console.log(indexOf(list.head, 2), 1);

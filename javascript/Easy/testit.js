@@ -1,38 +1,50 @@
-// https://www.codewars.com/kata/56eff1e64794404a720002d2/train/javascript
-
-
-// Not completed yet
-function testit(s){
-    const obj = {'w':0,'o':0,'r':0,'d':0}
-    // const regexs =[/w/,/o/,/r/,/d/]
-    s = s.toLowerCase();
-    let totals = 0;
-    let x = 0
-    for (let i = 0; i < s.length; i++) {
-        // if(x ==3){
-        //     totals++;
-        //     x=0;
-        // }
-        // if(!regexs[x].test(s[i])){
-        //     x=0;
-        // }
-        // if(regexs[x].test(s[i])){
-        //     x++;
-        // }
-
-        // console.log(totals,s[i],regexs[x],x)
+// https://www.codewars.com/kata/56d93f249c844788bc000002/train/javascript
+function testit(s) {
+  const letters = [];
+  for (let i = 0; i < s.length; i++) {
+    let current = s[i];
+    if (s[i + 1] === " " || i == s.length - 1) {
+      letters.push(current.toUpperCase());
+    } else {
+      letters.push(current);
     }
-    return  totals
   }
 
-// console.log(testit("word"), 1, "");
-// console.log(testit("hello world"), 1, "");
-// console.log(testit("I love codewars."), 0, "");
-// console.log(testit("My cat waiting for a dog."), 1, "");
-// console.log(testit("We often read book, a word hidden in the book."), 2, "");
-console.log(testit("When you in order to do something by a wrong way, your heart will missed somewhere."), 2, "");
-// console.log(testit("This sentence have one word."), 1, "");
-// console.log(testit("This sentence have two word, not one word."), 2, "");
-// console.log(testit("One word + one word = three word ;-)"), 3, "");
-// console.log(testit("Can you find more word for me?"), 1, "");
-// woordrodoowroorr
+  return letters.join("");
+}
+
+// console.log(testit(""), "", "");
+// console.log(testit("a"), "A", "");
+// console.log(testit("b"), "B", "");
+// console.log(testit("a a"), "A A", "");
+// console.log(testit("a b"), "A B", "");
+// console.log(testit("a b c"), "A B C", "");
+
+// https://www.codewars.com/kata/56eff1e64794404a720002d2/train/javascript
+
+function testit(s) {
+  s = s.toLowerCase();
+  const letters = ["w", "o", "r", "d"];
+  let index = 0;
+  let total = 0;
+  for (let i = 0; i < s.length; i++) {
+    if (letters[index] === s[i]) {
+      // console.log("t");
+      index += 1;
+      if (index === 4) {
+        total += 1;
+        index = 0;
+      }
+    }
+  }
+
+  return total;
+}
+
+console.log(testit("word"), 1);
+console.log(
+  testit(
+    "OdOwRRRddoOwrDrWWwrWoddRoOodrRdDrDDdwRoDordrOWDdRwodwrRdORowDRWWDwowRRwrWDDdrdorDWOOorroDRDDoWOwOd"
+  ),
+  6
+);
