@@ -2,6 +2,7 @@
 
 function createDict(keys, values) {
   // ...
+  // two arrays into object through the use of the forEach method
   const obj = {};
   keys.forEach(
     (key, i) => (obj[key] = values[i] !== undefined ? values[i] : null)

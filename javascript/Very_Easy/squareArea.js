@@ -1,3 +1,5 @@
+// https://www.codewars.com/kata/5748838ce2fab90b86001b1a/train/javascript
+
 function squareArea(A) {
   const r = (4 * A) / (2 * Math.PI);
   return r * r;

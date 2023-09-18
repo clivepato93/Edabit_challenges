@@ -1,4 +1,4 @@
-//www.codewars.com/kata/5f709c8fb0d88300292a7a9d/train/javascript
+// www.codewars.com/kata/5f709c8fb0d88300292a7a9d/train/javascript
 
 function killer(suspectInfo, dead) {
   dead.sort();

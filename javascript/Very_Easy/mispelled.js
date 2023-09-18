@@ -1,4 +1,4 @@
-//www.codewars.com/kata/5892595f190ca40ad0000095/train/javascript
+// www.codewars.com/kata/5892595f190ca40ad0000095/train/javascript
 // strings
 var mispelled = function (word1, word2) {
   if (word1 === word2) return true;

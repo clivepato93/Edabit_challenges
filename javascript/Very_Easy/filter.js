@@ -1,5 +1,6 @@
 // https://www.codewars.com/kata/56dd9b84fe5754786f0014f7/train/javascript
 // Prototype
+// This is for a kata only this is bad due to overwriting the default filter func
 Array.prototype.filter = function (func) {
   const newArr = [];
   for (let i = 0; i < this.length; i++) {

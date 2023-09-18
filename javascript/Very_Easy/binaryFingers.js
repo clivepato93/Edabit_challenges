@@ -1,6 +1,7 @@
 // https://www.codewars.com/kata/565f1bd8f97d3e59c400014a/train/javascript
 
 function binaryFingers(binString) {
+  // binary to number Number.parseInt(binString, 2)
   const obj = {
     16: "Pinkie",
     8: "Ring",

@@ -1,4 +1,6 @@
 //www.codewars.com/kata/55befc42bfe4d13ab1000007/train/javascript
+
+// Node Kata's
 function Node(data) {
   this.data = data;
   this.next = null;

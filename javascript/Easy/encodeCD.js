@@ -1,3 +1,5 @@
+// https://www.codewars.com/kata/643a47fadad36407bf3e97ea/train/javascript
+
 function encodeCD(n) {
   //number to binary n.toString(2)
   const bin = n.toString(2).padStart(8, "0");

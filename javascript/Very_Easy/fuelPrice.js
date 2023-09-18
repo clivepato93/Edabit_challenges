@@ -1,4 +1,4 @@
-//www.codewars.com/kata/57b58827d2a31c57720012e8/train/javascript
+// www.codewars.com/kata/57b58827d2a31c57720012e8/train/javascript
 
 function fuelPrice(litres, pricePerLitre) {
   // your code here

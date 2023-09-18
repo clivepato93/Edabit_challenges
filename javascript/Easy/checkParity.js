@@ -1,7 +1,6 @@
 // https://www.codewars.com/kata/5df261342964c80028345a0a/train/javascript
 
 function checkParity(parity, bin) {
-  //Have fun!
   const ones = [...bin].filter((num) => num === "1");
   return ones.length % 2 == 0 && parity === "even"
     ? 0

@@ -1,5 +1,6 @@
 // https://www.codewars.com/kata/55e9529cbdc3b29d8c000016/train/javascript
 function charToAscii(string) {
+  // String to Ascii code string[index].charCodeAt(0)
   //your code here
   if (!string) return null;
   const obj = {};

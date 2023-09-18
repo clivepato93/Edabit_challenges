@@ -11,7 +11,7 @@ function swap(string) {
     .map((letter) => (/[aeiou]/.test(letter) ? letter.toUpperCase() : letter))
     .join("");
 }
-
+// Regex useful
 /* replace function iterating through the string
 The "g" at the end of the RegEx stands for "Global Search",
 which looks at all characters inside the string no matter their position.

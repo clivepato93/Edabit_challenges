@@ -1,3 +1,4 @@
+// https://www.codewars.com/kata/583df40bf30065fa9900010c/train/javascript
 function getMean(arr, x, y) {
   const totalx = arr.slice(0, x).reduce((t, c) => t + c, 0);
   const totaly = arr.slice(-y).reduce((t, c) => t + c, 0);

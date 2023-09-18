@@ -1,4 +1,5 @@
 // https://www.codewars.com/kata/57a23c2acf1fa514d0001034/train/javascript
+
 function whoTookTheCarKey(message) {
   //Find that Freakin' Key!
   // Binary to Number then binary to letter
