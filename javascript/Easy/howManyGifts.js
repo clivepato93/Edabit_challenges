@@ -2,14 +2,13 @@
 
 function howManyGifts(maxBudget, gifts) {
   // your code goes here
-  let i = 0;
-  while (maxBudget > 0) {
-    if (maxBudget - gifts[i] > 0) {
-      maxBudget -= gifts[i];
-    } else {
-    }
+  let num = 0;
+  gifts = gifts.sort((a, b) => b - a);
+  while (maxBudget - gifts[gifts.length - 1] >= 0) {
+    maxBudget -= gifts.pop();
+    num++;
   }
-  return i;
+  return num;
 }
 
 console.log(howManyGifts(20, [13, 2, 4, 6, 1]), 4);

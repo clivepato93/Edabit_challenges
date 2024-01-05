@@ -1,5 +1,5 @@
 // https://www.codewars.com/kata/582c5382f000e535100001a7/train/javascript
-
+// Linked Lists
 var push = (head, data) => new Node(data, head);
 
 function parse(string) {
