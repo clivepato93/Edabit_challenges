@@ -1,5 +1,4 @@
 // https://www.codewars.com/kata/5b68c7029756802aa2000176/train/javascript
-
 function logs(x, a, b) {
   //your code here
   return Math.log(a * b) / Math.log(x);

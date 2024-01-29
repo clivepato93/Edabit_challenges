@@ -17,4 +17,4 @@ function binSearch(arr, toSearch) {
 var arr = [1, 2, 3, 4, 5];
 
 console.log(binSearch(arr, 6), -1);
-// console.log(binSearch(arr, 2), 1);
+console.log(binSearch(arr, 2), 1);
