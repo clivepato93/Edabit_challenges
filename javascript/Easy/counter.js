@@ -9,6 +9,7 @@ let counter = {
     return {
       next() {
         curr++;
+
         return { done: false, value: curr };
       },
     };

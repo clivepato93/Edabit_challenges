@@ -14,7 +14,25 @@ function binSearch(arr, toSearch) {
   return -1;
 }
 
-var arr = [1, 2, 3, 4, 5];
+// var arr = [1, 2, 3, 4, 5];
 
-console.log(binSearch(arr, 6), -1);
-console.log(binSearch(arr, 2), 1);
+// console.log(binSearch(arr, 6), -1);
+// console.log(binSearch(arr, 2), 1);
+
+function binSearchAddition(arr, toSearch) {
+  let [start, end] = [0, arr.length - 1];
+  while (start <= end) {
+    const pos = Math.floor((start + end) / 2);
+    if ((toSearch) => arr[pos] && toSearch <= arr[i + 1]) {
+      start = pos + 1;
+    } else {
+      end = pos - 1;
+    }
+  }
+  return -1;
+}
+
+var arr = [10, 20, 30, 40, 50, 60];
+
+console.log(binSearchAddition(arr, 6), -1);
+console.log(binSearchAddition(arr, 2), 1);

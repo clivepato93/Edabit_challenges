@@ -17,14 +17,12 @@ console.log(palindrome(-450),"Not valid");
 
 // https://www.codewars.com/kata/numerical-palindrome-number-1-dot-5
 
-
-
-// function palindrome(num,s,arr=[]) { 
-//   //Code goes here 
+// function palindrome(num,s,arr=[]) {
+//   //Code goes here
 //   if(typeof num != 'number'|| typeof s != 'number' || num<0) return 'Not valid'
 //   const arr = [];
 //   while (arr.length!= s) {
-    
+
 //     const stringNum = ([...`${num}`].reverse().join(''));
 //     if(stringNum===`${num}` && stringNum.length>1){
 //       arr.push(num)

@@ -1,44 +1,50 @@
 //https://www.codewars.com/kata/63cbe409959401003e09978b/train/javascript
 
 function setReducer(input) {
-  // code here
-  //   input.indexOf(input[0], 1);
-  let digitChecker = input[0];
-  console.log(input.indexOf(input[0], 1));
-  const indexChecker = input.indexOf(input[0], 1);
-  const newSet = new Set(input.slice(0, indexChecker));
-  const setLength = newSet.size;
-  console.log(newSet, setLength);
-  //   const newArr = setLength>1? input.slice(0, indexChecker).map((num,i)=>input[]===0||[]?):;
-  //   console.log(`the set is ${x} the length of x is ${setLength}`);
-  //   console.log(
-  //     input.splice(
-  //       `the array is ${input}`,
-  //       0,
-  //       setLength > 1 ? 1 : setLength + 1,
-  //       x > 1 ? 1 : setLength - 1
-  //     )
-  //   );
-
-  //   while (input.length > 1) {
-  //     const first = input[0];
-  //     const indexChecker = input.indexOf(first, 1);
-  //     console.log(input.slice(0, indexChecker));
-  //     // const indexChecker = input.indexOf(input[0], 1);
-  //     const x = new Set(input.slice(0, indexChecker));
-  //     const setLength = x.size;
-  //   console.log(
-  //     input.slice(0, indexChecker),
-  //     input.splice(0, x > 1 ? 1 : indexChecker + 1, x > 1 ? indexChecker : 1)
-  //     )
-  //     input.splice(
-  //       `the array is ${input}`,
-  //       0,
-  //       setLength > 1 ? 1 : setLength + 1,
-  //       x > 1 ? 1 : setLength - 1
-  //     );
-  //   }
-  //   return input;
+  let t = true;
+  while (t) {
+    for (let index = 0; index < input.length; index++) {
+      debugger;
+      const element = input[index];
+      let count = 1;
+      if (element != input[index + 1]) {
+        const n = input.splice(index, count, count);
+        // index++;
+        console.log(input);
+      } else {
+        for (let j = index + 1; j <= input.length; j++) {
+          if (count && j == input.length) {
+            const n = input.splice(index, count, count);
+            break;
+          }
+          if (input[j] == element) {
+            count++;
+          } else {
+            const n = input.splice(index, count, count);
+            index = j - n.length;
+            console.log(input);
+            break;
+          }
+        }
+      }
+    }
+    if (input.length == 1) t = !t;
+    // t = false;
+  }
+  return input[0];
 }
+
+function setReducer(arr) {
+  while (arr.length - 1) {
+    arr = arr.reduce((a, v, i) => {
+      debugger;
+      if (v != arr[i - 1]) a.push(1);
+      else a[a.length - 1]++;
+      return a;
+    }, []);
+  }
+  return arr.pop();
+}
+// console.log(setReducer([3, 1, 3, 1, 2]), 5);
 
 console.log(setReducer([0, 2, 7, 0, 0, 6, 2, 1, 2, 2, 3, 4]), 5);
