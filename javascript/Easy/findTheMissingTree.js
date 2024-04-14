@@ -1,3 +1,33 @@
+// https://www.codewars.com/kata/58aa8698ae929e1c830001c7/train/javascript
+
+function findTheMissingTree(trees) {
+  //coding and coding..
+
+  const obj = {};
+  for (let i = 0; i < trees.length; i++) {
+    let num = trees[i];
+    if (num in obj) {
+      obj[num] = obj[num] + 1;
+    } else {
+      obj[num] = 1;
+    }
+  }
+
+  let min;
+  debugger;
+  for (const key in obj) {
+    if (!min) {
+      min = key;
+    } else if (obj[min] > obj[key]) {
+      min = key;
+    }
+  }
+  return +min;
+}
+
+console.log(findTheMissingTree([1, 2, 2, 3, 3]), 1);
+
+// console.log(findTheMissingTree([11, 2, 3, 3, 3, 11, 2, 2]), 11);
 
 console.log(
   findTheMissingTree([
