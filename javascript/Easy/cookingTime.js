@@ -9,7 +9,10 @@ function cookingTime(neededPower, minutes, seconds, power) {
 
 console.log(cookingTime("600W", 4, 20, "800W"), "3 minutes 15 seconds");
 console.log(cookingTime("800W", 3, 0, "1200W"), "2 minutes 0 seconds");
-console.log(cookingTime("100W", 8, 45, "50W"), "17 minutes 30 seconds");
+console.log(
+  cookingTime("100W", 8, 45, "50W"),
+  "1getNewNotes7 minutes 30 seconds"
+);
 console.log(cookingTime("7500W", 0, 5, "600W"), "1 minutes 3 seconds");
 console.log(cookingTime("450W", 3, 25, "950W"), "1 minutes 38 seconds");
 console.log(cookingTime("21W", 64, 88, "25W"), "55 minutes 0 seconds");
