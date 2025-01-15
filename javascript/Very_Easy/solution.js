@@ -1,11 +1,7 @@
-// https://www.codewars.com/kata/50654ddff44f800200000007/train/javascript
-
-function solution(a, b){
-        // your code here
-    return a.length>b.length? b+a+b:a+b+a;
+//https://www.codewars.com/kata/57036f007fd72e3b77000023/train/javascript
+// static
+class Solution {
+  static main() {
+    console.log("Hello World!");
+  }
 }
-
-console.log(solution('45', '1'), '1451');
-console.log(solution('13', '200'), '1320013');
-console.log(solution('Soon', 'Me'), 'MeSoonMe');
-console.log(solution('U', 'False'), 'UFalseU');
