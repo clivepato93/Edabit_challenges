@@ -14,3 +14,4 @@ console.log(solution(2), [0, 0, 0]);
 console.log(solution(14), [4, 2, 0]);
 console.log(solution(30), [8, 4, 1]);
 console.log(solution(141), [37, 19, 9]);
+console.log("Hi to remove later")
